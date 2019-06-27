@@ -506,6 +506,7 @@ class Cache(object):
 
             #: not use params from exclude_params in cache key generation
             if exclude_params and arg_name in exclude_params:
+                arg_num += 1
                 continue
 
             if i == 0 and arg_name in ('self', 'cls'):
